@@ -1,0 +1,335 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  background: rgba(215, 210, 210, 0.861);
+  margin: auto;
+  /* padding-top:50px ; */
+  background:rgb(2, 13, 46) ;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.currency-btn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.currency-btn-1 {
+  background: rgb(2, 13, 46);
+  color: white;
+  font-size: 12px;
+  padding: 10px 20px;
+  border: 1px solid rgb(2, 13, 46);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.currency-btn-2 {
+  color: rgb(2, 13, 46);
+  font-size: 12px;
+  padding: 10px 20px;
+  border: 1px solid rgb(2, 13, 46);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.inputAmount {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1000;
+}
+
+.inputAmount label {
+  font-size: 12px;
+  color: rgb(172, 170, 170);
+}
+
+.inputAmount input {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 2px solid #000000;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Covert Section  */
+.converterSection {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 30px;
+  /* padding-bottom: 200px; */
+  position: relative;
+  z-index: 1000;
+  
+}
+pre {
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 20px;
+      min-width: 250px;
+     
+    }
+.fromSection {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  border-radius: 50px;
+  padding: 0.5rem 2.5rem 0.5rem 1rem; /* space for arrow */
+  border: 1px solid #ccc;
+  background-color: white;
+
+  background: url('data:image/svg+xml;utf8,<svg fill="%23666" height="32" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>')
+    no-repeat right 1rem center;
+  background-size: 1rem;
+ font-size: 12px;
+
+}
+
+option{
+  font-size: 12px;
+
+}
+.fromSection label {
+  font-size: 10px;
+  font-size: "Titillium Web", sans-serif;
+}
+.toSection {
+  display: inline-flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.toSection label {
+  font-size: 10px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.arrow {
+  display: inline-flex;
+  flex-direction: column;
+  width: 2%;
+  font-size: 10px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.convert-btn button {
+  width: 100%;
+  background: rgb(2, 13, 46);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: "Titillium Web", sans-serif;
+
+}
+
+.cvrt {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+}
+
+/* Home Page Styling */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  /* -webkit-backdrop-filter: blur(15px); */
+}
+
+nav span {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Wallpoet", sans-serif;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  background: rgb(6, 38, 134);
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.hero-section {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  width: 80%;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-section p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #f1f1f1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #f39c12;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #e67e22;
+  transform: translateY(-3px);
+}
+
+/* .features {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+  padding: 10px 10px;
+  background: rgb(2, 13, 46); 
+  color: #fff;
+  text-align: center;
+} */
+
+/* .feature-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+} */
+
+footer{
+  text-align: center;
+  font-size: 12px;
+  /* margin-top: 200px; */
+  color: #fff;
+}
+@media only screen and (max-width: 992px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-section p {
+    font-size: 0.8rem;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    /* -webkit-backdrop-filter: blur(15px); */
+  }
+
+  nav span {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Wallpoet", sans-serif;
+    /* width: 10%; */
+  }
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    background: rgb(6, 38, 134);
+    padding: 8px 16px;
+    border-radius: 15px;
+    font-size: small;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 1.6rem;
+  }
+  .btn {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}
